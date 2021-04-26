@@ -140,7 +140,7 @@ Case summary
             <span class="govuk-caption-xl">ROSH full analysis</span>
             <h1 class="govuk-heading-xl">Suicide and self-harm</h1>
 
-            <div class="govuk-form-group">
+            <div class="govuk-form-group suicideBoolean">
                   <fieldset class="govuk-fieldset">
                     <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
                       <h1 class="govuk-fieldset__heading">
@@ -150,7 +150,7 @@ Case summary
 
                     <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
                       <div class="govuk-radios__item">
-                        <input class="govuk-radios__input" id="where-do-you-live" name="fullAnalysis" type="radio" value="england" data-aria-controls="conditional-fullAnalysisYes">
+                        <input class="govuk-radios__input" id="suicideYes" name="fullAnalysis" type="radio" value="england" data-aria-controls="conditional-fullAnalysisYes">
                         <label class="govuk-label govuk-radios__label" for="fullAnalysisYes" >
                           Yes
                         </label>
@@ -173,7 +173,7 @@ Case summary
                       </div>
 
                       <div class="govuk-radios__item">
-                        <input class="govuk-radios__input" id="where-do-you-live-2" name="fullAnalysis" type="radio" value="scotland">
+                        <input class="govuk-radios__input" id="suicideNo" name="fullAnalysis" type="radio" value="scotland">
                         <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
                           No
                         </label>
@@ -204,7 +204,7 @@ Case summary
                   </fieldset>
                 </div>
 
-                <div class="govuk-form-group">
+                <div class="govuk-form-group selfHarmBoolean">
                   <fieldset class="govuk-fieldset">
                     <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
                       <h1 class="govuk-fieldset__heading">
@@ -214,7 +214,7 @@ Case summary
 
                     <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
                       <div class="govuk-radios__item">
-                        <input class="govuk-radios__input" id="where-do-you-live" name="selfHarmConcerns" type="radio" value="england" data-aria-controls="conditional-selfHarmConcernsYes">
+                        <input class="govuk-radios__input" id="selfHarmConcernsYes" name="selfHarmConcerns" type="radio" value="england" data-aria-controls="conditional-selfHarmConcernsYes">
                         <label class="govuk-label govuk-radios__label" for="selfHarmConcernsYes" >
                           Yes
                         </label>
@@ -237,7 +237,7 @@ Case summary
                       </div>
 
                       <div class="govuk-radios__item">
-                        <input class="govuk-radios__input" id="where-do-you-live-2" name="selfHarmConcerns" type="radio" value="scotland">
+                        <input class="govuk-radios__input" id="selfHarmConcernsNo" name="selfHarmConcerns" type="radio" value="scotland">
                         <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
                           No
                         </label>
@@ -268,7 +268,7 @@ Case summary
                   </fieldset>
                 </div>
 
-                 <div class="govuk-form-group">
+                 <div class="govuk-form-group hideAcct">
                     <fieldset class="govuk-fieldset" aria-describedby="fullRisk-hint">
                       <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
                         <h1 class="govuk-fieldset__heading">

@@ -15,6 +15,14 @@ $(document).ready(function () {
 
 $( document ).ready(function() {
 
+  $("#suicideYes").click(function(){
+      $(".hideAcct").show();
+  });
+
+  $("#selfHarmConcernsYes").click(function(){
+      $(".hideAcct").show();
+  });
+
   $("#strangerYes").click(function(){
       $(".hiddenStranger").show();
   });
@@ -155,11 +163,33 @@ $( document ).ready(function() {
       }
   });
 
+
+  $('.selfHarmBoolean').click(function() {
+     if($('#suicideNo').is(':checked') && $('#selfHarmConcernsNo').is(':checked')) 
+      { 
+        $(".hideAcct").hide();
+
+      }
+  });
+
+  $('.suicideBoolean').click(function() {
+     if($('#suicideNo').is(':checked') && $('#selfHarmConcernsNo').is(':checked')) 
+      { 
+        $(".hideAcct").hide();
+
+      }
+  });
+
+
+
+
+
+
   //if 180 is yes
   $('.appropriateToDoFullRiskOhHarm').click(function() {
      if($('#fullRiskYes').is(':checked')) 
       { 
-        $("#button").attr("onclick","location.href = 'previousBehaviour2.html';");
+        $("#button").attr("onclick","location.href = 'checkAnswersNoRiskHarmAnalysis.html';");
 
       }
   });
@@ -176,6 +206,10 @@ $( document ).ready(function() {
 $('input.example1').on('change', function() {
     $('input.example').not(this).prop('checked', false);  
 });
+
+
+
+
 
 
 

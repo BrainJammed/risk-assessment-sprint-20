@@ -133,7 +133,8 @@ Case summary
  <div class="govuk-width-container govuk-width-container--app-extra-wide ">
    <main class="govuk-main-wrapper govuk-main-wrapper--auto-spacing" id="main-content" role="main">
 
-
+            <div class="govuk-grid-row">
+               <div class="govuk-grid-column-two-thirds">
 
 
       <a href="knowChildrenRisk.html" class="govuk-back-link">Back</a>
@@ -155,7 +156,7 @@ Case summary
                           Yes
                         </label>
                       </div>
-
+<!-- 
                       <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-fullAnalysisYes">
                           <div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="4000">
                                 <div class="govuk-form-group">
@@ -170,7 +171,7 @@ Case summary
                                 </div>
 
                             </div>
-                      </div>
+                      </div> -->
 
                       <div class="govuk-radios__item">
                         <input class="govuk-radios__input" id="suicideNo" name="fullAnalysis" type="radio" value="scotland">
@@ -184,7 +185,7 @@ Case summary
                           Don't know
                         </label>
                       </div>
-                      <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-fullAnalysisDont">
+                      <!-- <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-fullAnalysisDont">
                           <div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="4000">
                                 <div class="govuk-form-group">
                                   <label class="govuk-label" for="with-hint">
@@ -199,7 +200,7 @@ Case summary
 
                             </div>
                       </div>
-                    </div>
+                    </div> -->
 
                   </fieldset>
                 </div>
@@ -220,7 +221,7 @@ Case summary
                         </label>
                       </div>
 
-                      <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-selfHarmConcernsYes">
+                      <!-- <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-selfHarmConcernsYes">
                           <div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="4000">
                                 <div class="govuk-form-group">
                                   <label class="govuk-label" for="with-hint">
@@ -234,7 +235,7 @@ Case summary
                                 </div>
 
                             </div>
-                      </div>
+                      </div> -->
 
                       <div class="govuk-radios__item">
                         <input class="govuk-radios__input" id="selfHarmConcernsNo" name="selfHarmConcerns" type="radio" value="scotland">
@@ -248,7 +249,7 @@ Case summary
                           Don't know
                         </label>
                       </div>
-                      <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-selfHarmConcernsDont">
+                      <!-- <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-selfHarmConcernsDont">
                           <div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="4000">
                                 <div class="govuk-form-group">
                                   <label class="govuk-label" for="with-hint">
@@ -263,9 +264,20 @@ Case summary
 
                             </div>
                       </div>
-                    </div>
+                    </div> -->
 
                   </fieldset>
+                </div>
+
+                <div class="govuk-form-group">
+                  <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--m" for="more-detail">
+                      Can you provide more detail?
+                    </label>
+                  </h1>
+                  <div id="more-detail-hint" class="govuk-hint">
+                    Describe circumstances, issues and needs that relate to current concerns about suicide and self-harm.
+                  </div>
+                  <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
                 </div>
 
                  <div class="govuk-form-group hideAcct">
@@ -303,6 +315,14 @@ Case summary
                     </fieldset>
                   </div>
 
+<!--                   <div class="govuk-form-group hideAcct">
+                      <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--m" for="width-10">
+                          What is the book number?
+                        </label>
+                      </h1>
+                      <input class="govuk-input govuk-input--width-10" id="width-10 name="event-name" type="text" >
+                    </div> -->
+
 
               <div class="govuk-form-group">
                     <fieldset class="govuk-fieldset" aria-describedby="fullRisk-hint">
@@ -318,7 +338,7 @@ Case summary
                             Yes
                           </label>
                         </div>
-                        <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-suicidePastyes">
+                        <!-- <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-suicidePastyes">
                           <div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="4000">
                                 <div class="govuk-form-group">
                                   <label class="govuk-label" for="with-hint">
@@ -332,7 +352,7 @@ Case summary
                                 </div>
 
                             </div>
-                      </div>
+                      </div> -->
 
                         <div class="govuk-radios__item">
                           <input class="govuk-radios__input" id="contact-2" name="suicidePast" type="radio" value="phone" >
@@ -341,8 +361,13 @@ Case summary
                           </label>
                         </div>
                        
+                       <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="where-do-you-live-3" name="suicidePast" type="radio" value="wales" data-aria-controls="conditional-selfHarmConcernsDont">
+                        <label class="govuk-label govuk-radios__label" for="selfHarmConcernsDont">
+                          Don't know
+                        </label>
                       </div>
-
+                      </div>
                     </fieldset>
                   </div>
 
@@ -360,7 +385,7 @@ Case summary
                             Yes
                           </label>
                         </div>
-                        <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-fullRiskYes">
+                       <!--  <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-fullRiskYes">
                           <div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="4000">
                                 <div class="govuk-form-group">
                                   <label class="govuk-label" for="with-hint">
@@ -374,7 +399,7 @@ Case summary
                                 </div>
 
                             </div>
-                      </div>
+                      </div> -->
 
                         <div class="govuk-radios__item">
                           <input class="govuk-radios__input" id="contact-2" name="fullRisk" type="radio" value="phone" >
@@ -382,28 +407,29 @@ Case summary
                             No
                           </label>
                         </div>
-                       
-                      </div>
 
+                        <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="where-do-you-live-3" name="fullRisk" type="radio" value="wales" data-aria-controls="conditional-selfHarmConcernsDont">
+                        <label class="govuk-label govuk-radios__label" for="selfHarmConcernsDont">
+                          Don't know
+                        </label>
+                      </div>
+                      </div>
                     </fieldset>
                   </div>
 
+                    <div class="govuk-form-group">
+                  <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--m" for="more-detail">
+                      Can you provide more detail?
+                    </label>
+                  </h1>
+                  <div id="more-detail-hint" class="govuk-hint">
+                    Describe circumstances, issues and needs that relate to previous concerns about suicide and self-harm.
+                  </div>
+                  <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+                </div>
 
 
-            
-
-            
-              <div class="govuk-grid-row">
-               <div class="govuk-grid-column-two-thirds">
-
-
- 
-
-
-
-
-                 
-                   
               </div>
             </div>
 

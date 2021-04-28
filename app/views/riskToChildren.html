@@ -238,21 +238,17 @@ Case summary
 
 
 
-
+<!-- 
                 <button class="govuk-button moj-tooltip govuk-!-margin-bottom-1 govuk-!-margin-right-2" data-module="govuk-button">Save and continue</button>
 
                 <button class="govuk-button govuk-button--secondary" data-module="govuk-button" onclick="location.href = 'index1.html';" id="close">
                   Back to assessment progress
-                </button>
+                </button> -->
 
-
- 
-
-                                            
-
-
-              
-
+                <button class="govuk-button moj-tooltip govuk-!-margin-bottom-1 govuk-!-margin-right-2" data-module="govuk-button">Save and continue</button>
+            <button class="govuk-button govuk-button--secondary" data-module="govuk-button" onclick="clickForm('index1')" id="close">
+              Back to assessment progress
+            </button>
 
 
 
@@ -260,20 +256,6 @@ Case summary
         
               </div>
             </div>
-
-
-
-
-
-
-              
-
-
-
-
-
-
-
         </main>
       </form>
       </div>
@@ -346,6 +328,16 @@ Case summary
     
   
     <!-- Javascript -->
+
+               <script>
+             function clickForm(url){
+               var form = $( "form" ).first();
+               form.prop("action", url);
+               form.submit();
+             }
+           </script>
+
+           
 <script src="/public/javascripts/jquery-1.11.3.js"></script>
 
 

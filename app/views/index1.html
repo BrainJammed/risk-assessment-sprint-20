@@ -291,36 +291,27 @@ Case summary
             </li>
             </li>
 
-
+            {% if (data['1']  != 'conno') %}
             <li class="app-task-list__item riskToChildrenArea">
               <span class="app-task-list__task-name">
-<!--                 <a href="" aria-describedby="read-declaration-status">
-                  Risk to children whose identity is known
-                </a> -->
-                <span class="app-task-list__task-name">
+              <span class="app-task-list__task-name">
                 Risk to children whose identity is known
               </span>
               </span>
-              <!-- <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="list-convictions-status">Not started</strong> -->
               <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="list-convictions-status">Cannot start yet</strong>
             </li>
-
-
 
 
             <li class="app-task-list__item">
               <span class="app-task-list__task-name">
-<!--                 <a href="" aria-describedby="read-declaration-status">
-                  Details of children at risk of serious harm
-                </a> -->
                 <span class="app-task-list__task-name">
                 Details of children at risk of serious harm
               </span>
               </span>
-              <!-- <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="list-convictions-status">Not started</strong> -->
               <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="list-convictions-status">Cannot start yet</strong>
             </li>
             </li>
+            {% endif %}
 
 
             <li class="app-task-list__item">

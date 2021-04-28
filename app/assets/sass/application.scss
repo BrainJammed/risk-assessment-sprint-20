@@ -23,7 +23,9 @@ $govuk-assets-path: '/govuk/assets/';
 // moj components
 @import "node_modules/@ministryofjustice/frontend/moj/all";
 
-
+.hideAcct {
+  display: none;
+}
 
 .hidePreviousCurrent {
   display: none;
@@ -247,7 +249,7 @@ autocomplete__option--no-results {
   transform: rotate(135deg);
   float: right;
     top: -39px;
-    right: 150px;
+    right: 130px;
   &:after, &:before {
     content: "";
     box-sizing: border-box;

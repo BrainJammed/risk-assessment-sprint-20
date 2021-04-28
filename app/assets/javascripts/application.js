@@ -176,9 +176,14 @@ $( document ).ready(function() {
      if($('#suicideNo').is(':checked') && $('#selfHarmConcernsNo').is(':checked')) 
       { 
         $(".hideAcct").hide();
-
       }
   });
+
+
+
+
+
+
 
 
 

@@ -119,7 +119,7 @@ Case summary
         <span class="key-details-bar__name govuk-!-margin-right-6">Gary Hart</span>
         <span class="govuk-body key-details-bar_divider crn"><strong>CRN:</strong> DX12340X</span>
         <span class="govuk-body key-details-bar_divider pnc"><strong>PNC:</strong> A1234560FF</span>
-        <span class="govuk-body key-details-bar_divider pnc"><strong>Date of birth:</strong> 12 October 1989 (31 years old)</span>
+        <span class="govuk-body key-details-bar_divider pnc"><strong>Date of birth:</strong> 12 October 1989 (32 years old)</span>
         <!-- <span class="key-details-bar__nino"></span>
         <span class="govuk-visually-hidden">Status from nDelius:</span>
         <span class="key-details-bar__status">Current offender</span> -->
@@ -133,6 +133,9 @@ Case summary
  <div class="govuk-width-container govuk-width-container--app-extra-wide ">
    <main class="govuk-main-wrapper govuk-main-wrapper--auto-spacing" id="main-content" role="main">
 
+    {#                                <form novalidate="" class="ng-untouched ng-pristine ng-valid">#}
+                                <form class="form" action="/riskToSelf" method="post">
+
 
 
 
@@ -143,6 +146,8 @@ Case summary
 
               <div class="govuk-grid-row">
                <div class="govuk-grid-column-two-thirds">
+
+
 
             <div class="govuk-form-group contactWithChild">
           <fieldset class="govuk-fieldset">
@@ -175,7 +180,7 @@ Case summary
           </fieldset>
         </div>
 
-         <div class="govuk-form-group">
+         <div class="govuk-form-group concernsInRelationToChildren">
             <fieldset class="govuk-fieldset">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
                 <h1 class="govuk-fieldset__heading">
@@ -184,19 +189,19 @@ Case summary
               </legend>
               <div class="govuk-radios">
                 <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="concernsInRelationYes" name="concernsInRelation" type="radio" value="england">
+                  <input class="govuk-radios__input" id="concernsInRelationYes" name="1" type="radio" value="concernsInRelationYes">
                   <label class="govuk-label govuk-radios__label" for="where-do-you-live">
                     Yes
                   </label>
                 </div>
                 <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="concernsInRelationNo" name="concernsInRelation" type="radio" value="scotland">
+                  <input class="govuk-radios__input" id="concernsInRelationNo" name="1" type="radio" value="conno">
                   <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
                     No
                   </label>
                 </div>
                 <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="concernsInRelationDont" name="concernsInRelation" type="radio" value="wales">
+                  <input class="govuk-radios__input" id="concernsInRelationDont" name="1" type="radio" value="england">
                   <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
                     Don't know
                   </label>
@@ -232,20 +237,27 @@ Case summary
             </div>
 
 
-                <button class="govuk-button govuk-!-margin-right-1" id="button" data-module="govuk-button" onclick="location.href = 'riskToself.html';">Save and continue</button>
 
-                <button class="govuk-button govuk-button--secondary" data-module="govuk-button" onclick="location.href = 'index1.html';">
+
+                <button class="govuk-button moj-tooltip govuk-!-margin-bottom-1 govuk-!-margin-right-2" data-module="govuk-button">Save and continue</button>
+
+                <button class="govuk-button govuk-button--secondary" data-module="govuk-button" onclick="location.href = 'index1.html';" id="close">
                   Back to assessment progress
                 </button>
+
+
+ 
+
+                                            
+
+
+              
+
+
+
+
           </div>
         
-
-
-
-
-
-
-                  
               </div>
             </div>
 
@@ -263,6 +275,7 @@ Case summary
 
 
         </main>
+      </form>
       </div>
 
 

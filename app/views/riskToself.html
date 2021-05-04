@@ -133,6 +133,9 @@ Case summary
  <div class="govuk-width-container govuk-width-container--app-extra-wide ">
    <main class="govuk-main-wrapper govuk-main-wrapper--auto-spacing" id="main-content" role="main">
 
+    {#                                <form novalidate="" class="ng-untouched ng-pristine ng-valid">#}
+                                <form class="form" action="/otherRisks" method="post">
+
 
 
 
@@ -154,19 +157,19 @@ Case summary
                   </legend>
                   <div class="govuk-radios">
                     <div class="govuk-radios__item">
-                      <input class="govuk-radios__input" id="riskofsuicideYes" name="riskofsuicide" type="radio" value="england">
+                      <input class="govuk-radios__input" id="riskofsuicideYes" name="riskofsuicide" type="radio" value="riskofsuicideYes">
                       <label class="govuk-label govuk-radios__label" for="where-do-you-live">
                         Yes
                       </label>
                     </div>
                     <div class="govuk-radios__item">
-                      <input class="govuk-radios__input" id="riskofsuicideNo" name="riskofsuicide" type="radio" value="scotland">
+                      <input class="govuk-radios__input" id="riskofsuicideNo" name="riskofsuicide" type="radio" value="riskofsuicideNo">
                       <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
                         No
                       </label>
                     </div>
                     <div class="govuk-radios__item">
-                      <input class="govuk-radios__input" id="riskofsuicideDont" name="riskofsuicide" type="radio" value="wales">
+                      <input class="govuk-radios__input" id="riskofsuicideDont" name="riskofsuicide" type="radio" value="riskofsuicideDont">
                       <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
                         Don't know
                       </label>
@@ -274,6 +277,12 @@ Case summary
               </div>
             </div>
 
+            <button class="govuk-button moj-tooltip govuk-!-margin-bottom-1 govuk-!-margin-right-2" data-module="govuk-button">Save and continue</button>
+            <button class="govuk-button govuk-button--secondary" data-module="govuk-button" onclick="clickForm('index1')" id="close">
+              Back to assessment progress
+            </button>
+
+
 
 
 
@@ -281,13 +290,13 @@ Case summary
 
               
 
-                <button class="govuk-button govuk-!-margin-right-1" data-module="govuk-button" onclick="location.href = 'otherRisks.html';">Save and continue</button>
+<!--                 <button class="govuk-button govuk-!-margin-right-1" data-module="govuk-button" onclick="location.href = 'otherRisks.html';">Save and continue</button>
 
                 <button class="govuk-button govuk-button--secondary" data-module="govuk-button" onclick="location.href = 'index1.html';">
                   Back to assessment progress
                 </button>
           </div>
-
+ -->
 
 
 
@@ -376,6 +385,14 @@ Case summary
 
 
   <script src="/public/javascripts/auto-store-data.js"></script>
+
+             <script>
+             function clickForm(url){
+               var form = $( "form" ).first();
+               form.prop("action", url);
+               form.submit();
+             }
+           </script>
 
 
     

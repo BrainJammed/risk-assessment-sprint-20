@@ -141,6 +141,10 @@ Case summary
             <span class="govuk-caption-xl">ROSH full analysis</span>
             <h1 class="govuk-heading-xl">Suicide and self-harm</h1>
 
+
+
+
+            {% if (data['riskofsuicide']  != 'suino') %}
             <div class="govuk-form-group suicideBoolean">
                   <fieldset class="govuk-fieldset">
                     <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
@@ -204,6 +208,8 @@ Case summary
 
                   </fieldset>
                 </div>
+
+                {% endif %}
 
                 <div class="govuk-form-group selfHarmBoolean">
                   <fieldset class="govuk-fieldset">

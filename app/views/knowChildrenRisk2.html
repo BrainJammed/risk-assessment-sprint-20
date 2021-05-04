@@ -165,7 +165,7 @@ Case summary
                       </label>
                     </div>
 
-                    <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-identifiable-children">
+                    <!-- <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-identifiable-children">
                         <div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="4000">
                         <div class="govuk-form-group">
                           <label class="govuk-label" for="someProblems">
@@ -179,7 +179,7 @@ Case summary
                         </div>
 
                       </div>
-                    </div>
+                    </div> -->
 
                      <div class="govuk-radios__item">
                       <input class="govuk-radios__input" id="noprobems" name="identifiable-children" type="radio" value="no problems">
@@ -207,7 +207,7 @@ Case summary
                           </label>
                         </div>
 
-                        <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-identifiable-children2">
+                        <!-- <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-identifiable-children2">
                             <div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="4000">
                             <div class="govuk-form-group">
                               <label class="govuk-label" for="someProblems">
@@ -221,7 +221,7 @@ Case summary
                             </div>
 
                           </div>
-                        </div>
+                        </div> -->
 
                          <div class="govuk-radios__item">
                           <input class="govuk-radios__input" id="noprobems" name="identifiable-children2" type="radio" value="no problems">
@@ -236,6 +236,17 @@ Case summary
             
               <div class="govuk-grid-row">
                <div class="govuk-grid-column-two-thirds">
+
+                <div class="govuk-form-group">
+                  <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--m" for="more-detail">
+                      Can you provide more detail?
+                    </label>
+                  </h1>
+                  <div id="more-detail-hint" class="govuk-hint">
+                    If the individual presents a risk to identifiable children, explain any relevant factors and situations not covered previously. If the children are at risk from others, explain the individual's involvement in the family and how, when and from whom the children may be at risk.
+                  </div>
+                  <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+                </div>
 
                  
                    

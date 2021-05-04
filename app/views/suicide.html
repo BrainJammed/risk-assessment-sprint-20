@@ -144,7 +144,7 @@ Case summary
 
 
 
-            {% if (data['riskofsuicide']  != 'suino') %}
+            {% if (data['2']  != 'suino') %}
             <div class="govuk-form-group suicideBoolean">
                   <fieldset class="govuk-fieldset">
                     <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
@@ -211,6 +211,8 @@ Case summary
 
                 {% endif %}
 
+
+                {% if (data['riskofselfharm']  != 'selfharmno') %}
                 <div class="govuk-form-group selfHarmBoolean">
                   <fieldset class="govuk-fieldset">
                     <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
@@ -274,6 +276,8 @@ Case summary
 
                   </fieldset>
                 </div>
+                {% endif %}
+     
 
                 <div class="govuk-form-group">
                   <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--m" for="more-detail">
@@ -285,6 +289,7 @@ Case summary
                   </div>
                   <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
                 </div>
+
 
                  <div class="govuk-form-group hideAcct">
                     <fieldset class="govuk-fieldset" aria-describedby="fullRisk-hint">
@@ -329,7 +334,7 @@ Case summary
                       <input class="govuk-input govuk-input--width-10" id="width-10 name="event-name" type="text" >
                     </div> -->
 
-
+                {% if (data['2']  != 'suino') %}
               <div class="govuk-form-group">
                     <fieldset class="govuk-fieldset" aria-describedby="fullRisk-hint">
                       <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
@@ -376,7 +381,11 @@ Case summary
                       </div>
                     </fieldset>
                   </div>
+                  {% endif %}
 
+
+
+                  {% if (data['riskofselfharm']  != 'selfharmno') %}
                   <div class="govuk-form-group">
                     <fieldset class="govuk-fieldset" aria-describedby="fullRisk-hint">
                       <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
@@ -423,6 +432,8 @@ Case summary
                       </div>
                     </fieldset>
                   </div>
+
+                  {% endif %}
 
                     <div class="govuk-form-group">
                   <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--m" for="more-detail">

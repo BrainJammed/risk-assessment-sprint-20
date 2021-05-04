@@ -313,7 +313,7 @@ Case summary
             </li>
             {% endif %}
 
-
+            {% if (data['riskofselfharm'] != 'selfharmno') and (data['2'] != 'suino') %}
             <li class="app-task-list__item">
               <span class="app-task-list__task-name">
 <!--                 <a href="" aria-describedby="read-declaration-status">
@@ -327,6 +327,10 @@ Case summary
               <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="list-convictions-status">Cannot start yet</strong>
             </li>
             </li>
+            {% endif %}
+
+
+            {% if (data['cushos']  != 'copn') %}
             <li class="app-task-list__item">
               <span class="app-task-list__task-name">
                 <!-- <a href="" aria-describedby="read-declaration-status">
@@ -340,6 +344,9 @@ Case summary
               <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="list-convictions-status">Cannot start yet</strong>
             </li>
             </li>
+            {% endif %}
+
+
             <li class="app-task-list__item">
               <span class="app-task-list__task-name">
                 <!-- <a href="" aria-describedby="read-declaration-status">
